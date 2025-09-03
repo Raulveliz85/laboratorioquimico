@@ -60,7 +60,14 @@
 .card-productos button {
   padding: 1rem 1rem;
   border-radius: 0.5rem;
+
 }
+
+.carouselFoto {
+  height: 600px;      
+  object-fit: cover;   
+}
+
 
 /*nuestra mision*/
 .fondo-mision {
