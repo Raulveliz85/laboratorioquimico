@@ -1,59 +1,75 @@
-.index-header, .index-header-NOSOTROS, .index-header-CONTACTO, .index-header-SERVICIOS, .index-header-preguntas {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+//variables
+$colormarron:rgba(255, 255, 255, 0.789);
+$colorgrid:rgba(21, 66, 111, 0.309);
+$colorblack:#000;
 
-.index-header, .index-header-NOSOTROS, .index-header-CONTACTO, .index-header-SERVICIOS, .index-header-preguntas {
-  min-height: 60vh;
+%background-cover-size{background-size: cover;
+  background-repeat: no-repeat;}
+
+  %index-heder-min-position-width{ 
+     min-height: 60vh;
   background-position: center;
   width: 100%;
-  position: relative;
-}
+  position: relative;}
 
-.Contenedor-servicios-grid_cuatro, .Contenedor-servicios-grid_tres, .Contenedor-servicios-grid_dos, .Contenedor-servicios-grid_uno {
-  border-radius: 0.5rem;
-  background-color: rgba(21, 66, 111, 0.309);
-  padding: 1rem;
-}
+  %grid-servicios{   border-radius: 0.5rem;
+  background-color: $colorgrid;
+  padding: 1rem;}
 
-.logotipo-footer, .empresas-logo, .usuario-logo {
-  width: 5rem;
-  height: 5rem;
-}
+  %width-height{  width: 5rem;
+  height: 5rem;}
+
+
+  //mixins
+
+  @mixin gridarea($gridAreaUno,$gridAreaDos,$gridAreaTres,$gridAreaCuatro)  { @extend %grid-servicios;  grid-area: #{$gridAreaUno}
+    /#{$gridAreaDos}/#{$gridAreaTres}/#{$gridAreaCuatro};}
 
 /* Estilos Generales */
 * {
   font-family: "Poppins", sans-serif;
 }
-
 ul {
   list-style-type: none;
 }
 
+
+
+
 /* Header */
 .index-header-preguntas {
   background-image: url(../img/preguntas.jpg);
-}
+@extend %background-cover-size;
+ @extend %index-heder-min-position-width; }
 
 .index-header-SERVICIOS {
   background-image: url(../img/servicios.jpg);
+@extend %background-cover-size;
+ @extend %index-heder-min-position-width;
 }
 
 .index-header-CONTACTO {
   background-image: url(../img/CONTACTO.jpg);
+@extend %background-cover-size;
+ @extend %index-heder-min-position-width;
 }
 
 .index-header-NOSOTROS {
   background-image: url(../img/NOSOTROS.jpg);
+@extend %background-cover-size;
+ @extend %index-heder-min-position-width;
 }
 
 .index-header {
   background-image: url(../img/BackgroundsNuevo.jpg);
-}
+@extend %background-cover-size;
+ @extend %index-heder-min-position-width;}
+
+
 
 /*este button es de las burbujas */
 .header-contenedor-inferior-button {
-  background-color: rgba(255, 255, 255, 0.789);
+  background-color:$colormarron;
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
   border: none;
@@ -64,9 +80,10 @@ ul {
 }
 
 /* Main */
+
 .card-productos {
   max-width: 25rem;
-  border: 1px solid #000;
+  border: 1px solid $colorblack;
   border-radius: 0.5rem;
 }
 
@@ -76,8 +93,9 @@ ul {
 }
 
 /*nuestra mision*/
+
 .fondo-mision {
-  background-color: rgba(255, 255, 255, 0.789);
+  background-color:$colormarron;
   padding: 1rem 0;
   margin: 4rem 0;
 }
@@ -88,7 +106,7 @@ ul {
   height: auto;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
-  border: 1px solid #000;
+  border: 1px solid $colorblack;
 }
 
 /*clientes*/
@@ -97,19 +115,25 @@ ul {
   padding: 0.2rem;
 }
 
+.usuario-logo {
+@extend  %width-height;
+}
+
 .cliente-card {
   background-color: #bac0c0;
   max-width: 20rem;
   padding: 2rem;
-  border: 1px solid #000;
+  border: 1px solid $colorblack;
 }
 
 /*empresas*/
 .empresas-logo {
+ @extend  %width-height;
   object-fit: cover;
 }
 
 /*servicios*/
+
 .Contenedor-servicios-grid {
   display: flex;
   flex-direction: column;
@@ -117,24 +141,24 @@ ul {
   padding: 1rem;
   flex-wrap: wrap;
 }
-
 .Contenedor-servicios-grid_uno {
-  grid-area: 1/1/2/2;
-}
+@include gridarea(1,1 ,2 ,2 )
 
+}
 .Contenedor-servicios-grid_dos {
-  grid-area: 1/2/2/4;
+@include gridarea(1,2 ,2 ,4 )
+ 
 }
-
 .Contenedor-servicios-grid_tres {
-  grid-area: 2/1/3/3;
-}
 
+@include gridarea(2, 1,3 ,3 )
+}
 .Contenedor-servicios-grid_cuatro {
-  grid-area: 2/3/3/4;
+@include gridarea(2,3 ,3 ,4 )
 }
 
 /* servicios localidad*/
+
 .container-servicios {
   background-image: url(../img/Argentina.jpg);
   background-size: cover;
@@ -143,6 +167,7 @@ ul {
 }
 
 /*nosotros*/
+
 .nosotros-contenedor {
   background-color: rgba(145, 111, 49, 0.591);
   padding: 1rem 0;
@@ -155,8 +180,8 @@ ul {
   border-radius: 0.5rem;
   width: 50%;
 }
-
 /* contacto*/
+
 .contacto-contenedor {
   background-image: url(../img/contacto-enlaces.jpg);
   height: 20rem;
@@ -164,7 +189,12 @@ ul {
 }
 
 /*preguntas*/
+
 /* Footer */
+.logotipo-footer {
+@extend  %width-height;
+}
+
 .footer {
   background-color: #bac0c0;
 }
@@ -174,9 +204,11 @@ ul {
     flex-direction: row;
     justify-content: center;
   }
+
   .empresas-logo {
     width: unset;
   }
+
   .Contenedor-servicios-grid {
     display: grid;
     grid-template-columns: repeat(1, 3fr);
@@ -184,5 +216,3 @@ ul {
     gap: 1rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
