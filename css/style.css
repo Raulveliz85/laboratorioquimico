@@ -16,18 +16,9 @@
   padding: 1rem;
 }
 
-.logotipo-footer, .empresas-logo, .usuario-logo {
+.logotipo-footer, .usuario-logo, .empresas-logo {
   width: 5rem;
   height: 5rem;
-}
-
-/* Estilos Generales */
-* {
-  font-family: "Poppins", sans-serif;
-}
-
-ul {
-  list-style-type: none;
 }
 
 /* Header */
@@ -59,10 +50,6 @@ ul {
   border: none;
 }
 
-.logotipo {
-  width: 10rem;
-}
-
 /* Main */
 .card-productos {
   max-width: 25rem;
@@ -77,7 +64,7 @@ ul {
 
 /*nuestra mision*/
 .fondo-mision {
-  background-color:   rgba(81, 75, 64, 0.637);
+  background-color: rgba(56, 51, 69, 0.789);
   padding: 1rem 0;
   margin: 4rem 0;
 }
@@ -89,6 +76,11 @@ ul {
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   border: 1px solid #000;
+}
+
+/*empresas*/
+.empresas-logo {
+  object-fit: cover;
 }
 
 /*clientes*/
@@ -104,9 +96,18 @@ ul {
   border: 1px solid #000;
 }
 
-/*empresas*/
-.empresas-logo {
-  object-fit: cover;
+/*nosotros*/
+.nosotros-contenedor {
+  background-color: rgba(145, 111, 49, 0.591);
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  max-width: 25rem;
+}
+
+.boton-contactar-nosotros {
+  border: none;
+  border-radius: 0.5rem;
+  width: 50%;
 }
 
 /*servicios*/
@@ -134,7 +135,6 @@ ul {
   grid-area: 2/3/3/4;
 }
 
-/* servicios localidad*/
 .container-servicios {
   background-image: url(../img/Argentina.jpg);
   background-size: cover;
@@ -142,28 +142,6 @@ ul {
   padding: 5rem;
 }
 
-/*nosotros*/
-.nosotros-contenedor {
-  background-color: rgba(145, 111, 49, 0.591);
-  padding: 1rem 0;
-  border-radius: 0.5rem;
-  max-width: 25rem;
-}
-
-.boton-contactar-nosotros {
-  border: none;
-  border-radius: 0.5rem;
-  width: 50%;
-}
-
-/* contacto*/
-.contacto-contenedor {
-  background-image: url(../img/contacto-enlaces.jpg);
-  height: 20rem;
-  background-size: cover;
-}
-
-/*preguntas*/
 /* Footer */
 .footer {
   background-color: #bac0c0;
@@ -183,6 +161,25 @@ ul {
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
   }
+}
+/* contacto*/
+.contacto-contenedor {
+  background-image: url(../img/contacto-enlaces.jpg);
+  height: 20rem;
+  background-size: cover;
+}
+
+/* Estilos Generales */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.logotipo {
+  width: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+/*clientes*/
+.clientes-contenedor {
+  background-color: rgb(176, 173, 173);
+  padding: 0.2rem;
+}
+
+.usuario-logo {
+@extend  %width-height;
+}
+
+.cliente-card {
+  background-color: #bac0c0;
+  max-width: 20rem;
+  padding: 2rem;
+  border: 1px solid $colorblack;
+}

@@ -1,0 +1,37 @@
+/* Main */
+
+.card-productos {
+  max-width: 25rem;
+  border: 1px solid $colorblack;
+  border-radius: 0.5rem;
+}
+
+.card-productos button {
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/*nuestra mision*/
+
+.fondo-mision {
+  background-color:rgba(78, 61, 122, 0.789);
+  padding: 1rem 0;
+  margin: 4rem 0;
+}
+
+.seccion-mision-card {
+  background-color: #bac0c0;
+  max-width: 25rem;
+  height: auto;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid $colorblack;
+}
+
+
+
+/*empresas*/
+.empresas-logo {
+ @extend  %width-height;
+  object-fit: cover;
+}

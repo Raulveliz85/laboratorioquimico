@@ -1,0 +1,7 @@
+
+  //mixins
+
+  @mixin gridarea($gridAreaUno,$gridAreaDos,$gridAreaTres,$gridAreaCuatro)  { @extend %grid-servicios;  grid-area: #{$gridAreaUno}
+    /#{$gridAreaDos}/#{$gridAreaTres}/#{$gridAreaCuatro};}
+
+    

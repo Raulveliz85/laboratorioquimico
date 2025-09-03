@@ -1,0 +1,17 @@
+
+//extends
+%background-cover-size{background-size: cover;
+  background-repeat: no-repeat;}
+
+  %index-heder-min-position-width{ 
+     min-height: 60vh;
+  background-position: center;
+  width: 100%;
+  position: relative;}
+
+  %grid-servicios{   border-radius: 0.5rem;
+  background-color: $colorgrid;
+  padding: 1rem;}
+
+  %width-height{  width: 5rem;
+  height: 5rem;}

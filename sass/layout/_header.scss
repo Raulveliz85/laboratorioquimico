@@ -1,0 +1,38 @@
+
+/* Header */
+.index-header-preguntas {
+  background-image: url(../img/preguntas.jpg);
+@extend %background-cover-size;
+ @extend %index-heder-min-position-width; }
+
+.index-header-SERVICIOS {
+  background-image: url(../img/servicios.jpg);
+@extend %background-cover-size;
+ @extend %index-heder-min-position-width;
+}
+
+.index-header-CONTACTO {
+  background-image: url(../img/CONTACTO.jpg);
+@extend %background-cover-size;
+ @extend %index-heder-min-position-width;
+}
+
+.index-header-NOSOTROS {
+  background-image: url(../img/NOSOTROS.jpg);
+@extend %background-cover-size;
+ @extend %index-heder-min-position-width;
+}
+
+.index-header {
+  background-image: url(../img/BackgroundsNuevo.jpg);
+@extend %background-cover-size;
+ @extend %index-heder-min-position-width;}
+
+
+/*este button es de las burbujas */
+.header-contenedor-inferior-button {
+  background-color:rgba(255, 255, 255, 0.789);
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+}

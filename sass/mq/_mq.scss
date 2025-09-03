@@ -1,0 +1,18 @@
+
+@media only screen and (min-width: 600px) {
+  .seccion-mision-flex {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .empresas-logo {
+    width: unset;
+  }
+
+  .Contenedor-servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
