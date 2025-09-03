@@ -1,5 +1,5 @@
 //variables
-$colormarron:rgba(255, 255, 255, 0.789);
+
 $colorgrid:rgba(21, 66, 111, 0.309);
 $colorblack:#000;
 
@@ -69,7 +69,7 @@ ul {
 
 /*este button es de las burbujas */
 .header-contenedor-inferior-button {
-  background-color:$colormarron;
+  background-color:rgba(255, 255, 255, 0.789);
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
   border: none;
@@ -95,7 +95,7 @@ ul {
 /*nuestra mision*/
 
 .fondo-mision {
-  background-color:$colormarron;
+  background-color:rgba(255, 255, 255, 0.789);
   padding: 1rem 0;
   margin: 4rem 0;
 }
