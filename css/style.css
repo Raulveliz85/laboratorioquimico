@@ -64,7 +64,7 @@
 
 /*nuestra mision*/
 .fondo-mision {
-  background-color: rgba(78, 61, 122, 0.789);
+  background-color: rgba(102, 99, 107, 0.789);
   padding: 1rem 0;
   margin: 4rem 0;
 }
@@ -144,7 +144,7 @@
   padding: 5rem;
 }
 
-/*preguntas frecuentes grid */
+
 
 /*grid preguntas frecuentes*/
 .Contenedor-preguntas-grid_cuatro, 
@@ -220,4 +220,4 @@ ul {
   width: 10rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+
