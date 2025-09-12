@@ -10,11 +10,7 @@
   position: relative;
 }
 
- .Contenedor-servicios-grid_cuatro, .Contenedor-servicios-grid_tres, .Contenedor-servicios-grid_dos, .Contenedor-servicios-grid_uno {
-  border-radius: 0.5rem;
-  background-color: rgba(21, 66, 111, 0.309);
-  padding: 1rem;
-}
+
 
 .logotipo-footer, .usuario-logo, .empresas-logo {
   width: 5rem;
@@ -110,6 +106,8 @@
   width: 50%;
 }
 
+
+
 /*servicios*/
 .Contenedor-servicios-grid {
   display: flex;
@@ -119,7 +117,11 @@
   flex-wrap: wrap;
 }
 
-
+ .Contenedor-servicios-grid_cuatro, .Contenedor-servicios-grid_tres, .Contenedor-servicios-grid_dos, .Contenedor-servicios-grid_uno {
+  border-radius: 0.5rem;
+  background-color: rgba(21, 66, 111, 0.309);
+  padding: 1rem;
+}
 
 .Contenedor-servicios-grid_uno {
   grid-area: 1/1/2/2;
