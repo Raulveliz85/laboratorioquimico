@@ -37,14 +37,6 @@
   height: 5rem;
 }
 
-/* Carousel */
-.carrousel-img {
-  min-height: 60vh;
-  background-position: center;
-  width: 100%;
-  position: relative;
-}
-
 /*este button es de las burbujas */
 .header-contenedor-inferior-button {
   background-color: rgba(255, 255, 255, 0.789);
